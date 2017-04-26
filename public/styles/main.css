@@ -432,7 +432,6 @@ nav {
   background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #F5F5F5 0%, #AFB0BD 100%);
   /* W3C Markup */
   background-image: radial-gradient(ellipse farthest-corner at center, #F5F5F5 0%, #AFB0BD 100%);
-  /*background-color: silver;*/
   border: darkslategrey solid 1px;
   font-weight: 900;
   height: 2em;
@@ -440,21 +439,39 @@ nav {
   width: 5em;
 }
 
-/* AboutMe start *******************/
-.title_army{
-  color: grey;
-  padding: 0;
+.aboutMe_left_area{
+  display: inline-block;
+  margin-left: 2em;
+  margin-right: 0;
+  margin-top: 0;
+  width: 40%;
+  vertical-align: top;
+}
+
+.aboutMe_name_title{
+  color: teal;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
   margin: 0 auto;
   margin-bottom: 1em;
-  margin-top: 2em;
   text-align: center;
 }
 
+
+.aboutMe_text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  margin: 0;
+  margin-bottom: 1em;
+  text-indent: 1em;
+}
+
+/* AboutMe start *******************/
 .agent_portait{
   border: groove 5px;
   box-shadow: 10px 10px 5px #888888;
   margin-left: 8em;
-  margin-top: 2em;
+  margin-top: 4em;
 }
 /* AboutMe end *******************/
 
@@ -462,62 +479,56 @@ nav {
 .contact_page{
   background-color: lightgrey;
   height: 40em;
-  /*margin-left: 25em;*/
   width: 100%;
 }
 
+.contact_name_title{
+  color: teal;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
+  margin: 0;
+  padding-top: 1em;
+  text-align: center;
+}
+
+.contact_info_right{
+  display: inline-block;
+  /*border: solid 2px;*/
+  margin-left: 5em;
+  width: 40%;
+}
 
 .contact_info{
   display: inline-block;
   color: black;
-  float: left;
   font-family: 'NTR', sans-serif;
-  margin-left: 8em;
-  /*vertical-align: top;*/
-}
-
-.contact_name_title{
-  /*display: inline-block;*/
-
-  /*display: block;*/
-  color: teal;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 3em;
-  /*margin: 0 auto;*/
-  /*margin-bottom: 1em;*/
-  margin: 0;
-  text-align: center;
-  /*width: auto;*/
+  margin-left: 2em;
+  vertical-align: top;
 }
 
 .contact_detail{
-  /*display: inline-block;*/
   font-size: 1.5em;
   height: auto;
   margin: 0;
   width: 9em;
 }
 
-.contact_image_right{
-  border: solid 1px;
-  display: block;
-  height: 20em;
-  margin: 0 auto;
+.contact_image{
+  /*border: solid 1px;*/
+  box-shadow: 10px 10px 5px #888888;
+  display: inline-block;
+  height: 25em;
   margin-top: 2em;
-  /*float: right;*/
-  width: 25em;
+  margin-left: 3em;
+  width: 35em;
 }
 
 
 .contact_agent_portrait{
   border: groove 5px;
   box-shadow: 10px 10px 5px #888888;
+  height: 10em;
   margin-left: 10em;
-  margin-top: 3em;
-  /*top: 3em;
-  left: 5em;*/
-  /*float: right;
-  vertical-align: top;*/
-  /*float: right;*/
+  width: 10em;
 }
 /* ContactMe end *******************/

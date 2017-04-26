@@ -30,10 +30,10 @@ export default React.createClass({
           <p className="page2_text">With that said, not all real estate agents are created equal.</p>
           <p className="page2_text">I have aligned myself with some of the most successful experts in the real estate industry in San Antonio to help me to provide the best resources for my clients. I am a no nonsense business professional who will always put the needs of my clients first and foremost.</p>
           <img className="page2_image_box" src="/styles/house1.jpg"/>
-          <img className="page2_image_box" src="/styles/house2.jpg"/>
+          <img className="page2_image_box" src="/styles/house5.jpg"/>
         </section>
         <aside className="page2_right_area">
-          <h1 className="page2_name_title">All City Real Estate</h1>
+          <h1 className="page2_name_title">Any City Real Estate</h1>
           <div>
             <table className="page2_contact_info">
               <tbody>
