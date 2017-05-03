@@ -60,7 +60,7 @@ export default React.createClass({
             <h1 className="nav_name_left">Agent Name</h1>
           </article>
           <article className="nav_middle">
-              <a href="" onMouseEnter={this.handleMouseOver} onMouseLeave={this.handleMouseOut}>
+              <a href="https://www.facebook.com/login.php?login_attempt=1&lwv=110" onMouseEnter={this.handleMouseOver} onMouseLeave={this.handleMouseOut}>
               <img className="facebook" ref="facebookImage" src={this.state.imgSrc}/>
             </a>
           </article>
@@ -100,7 +100,7 @@ export default React.createClass({
             </ul>
           </article>
           <article className="nav_middle">
-              <a href="" onMouseEnter={this.handleMouseOver} onMouseLeave={this.handleMouseOut}>
+              <a href="https://www.facebook.com/login.php?login_attempt=1&lwv=110" onMouseEnter={this.handleMouseOver} onMouseLeave={this.handleMouseOut}>
               <img className="facebook" ref="facebookImage" src={this.state.imgSrc}/>
             </a>
           </article>
