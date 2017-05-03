@@ -259,7 +259,7 @@ body{
   text-align: center;
 }
 
-.services_text{
+.text{
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
   margin: 2em;
@@ -278,13 +278,13 @@ body{
   width: 15em;
 }
 
-.aboutMe_text{
+/*.aboutMe_text{
   font-size: 1.5em;
   font-family: 'Open Sans', sans-serif;
   margin: 2em;
   margin-bottom: 0em;
   text-indent: 1em;
-}
+}*/
 
 
 
