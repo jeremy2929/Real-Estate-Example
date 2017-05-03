@@ -1,0 +1,604 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  /*height: 35em;*/
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.entire_wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+#background-video{
+  width: 100%;
+  height: 100%;
+  /*float: left;*/
+  top: 0;
+  padding: 0;
+  position: fixed; // optional depending on what you want
+}
+
+video {
+  width: 100%;
+  margin-left: 0;
+  height: 44em;
+  height: 100%;
+
+  /*height: 100%;*/
+
+}
+
+.main_title {
+  font-family: 'Comfortaa', sans-serif;
+  display: inline-block;
+  height: auto;
+  margin: 0 auto;
+  /*margin-top: 1em;*/
+  width: auto;
+}
+
+.main_subtitle{
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 1em;
+  /*display: inline-block;*/
+  height: auto;
+  margin: 0 auto;
+  /*margin-top: 1em;*/
+  width: auto;
+}
+
+.outer-container {
+  /*height: 39.1em;*/
+  height: 100%;
+  width: 100%;
+}
+
+.inner-container {
+  /*height: 39.1em;*/
+  height: 100%;
+  width: 100%;
+}
+
+.video-overlay {
+  display: block;
+  position: absolute;
+  font-size: 2em;
+  font-family: Helvetica;
+  height: 80%;
+  color: #FFF;
+  margin: 0 auto;
+  margin-top: 10%;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+
+
+
+.left_button{
+  background-color: Transparent;
+  border: solid white 2px;
+  color: white;
+  height: 4em;
+  outline: 0;
+  width: 10em;
+}
+
+.right_button{
+  background-color: Transparent;
+  border: solid white 2px;
+  color: white;
+  height: 4em;
+  margin-left: 1em;
+  outline: 0;
+  width: 10em;
+}
+
+.connect_mlsidx{
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 1em;
+  width: 70%;
+}
+
+.down_button{
+  background-color: Transparent;
+  color: white;
+  display: block;
+  font-size: .5em;
+  height: 3em;
+  margin: 0 auto;
+  margin-top: 3em;
+  outline: 0;
+  width: 3em;
+  -moz-border-radius: 50px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* second page start ----------*/
+/* nav bar start----------------*/
+#wrapper {
+  height: 20em;
+  width: 100%x;
+}
+
+.page2_wrapper{
+  background-image: url("/styles/hood.jpg");
+  margin: 0;
+}
+
+header {
+  text-align:center;
+}
+
+.nav_placeholder{
+  background-color: yellow;
+  height: 0px;
+  width: 100%;
+}
+
+.nav_placeholder_grow{
+  border: solid 2px;
+  background-color: red;
+  height: 0;
+  margin: 0;
+  width: 100%;
+}
+
+nav {
+  background: lightgrey;
+  height: 82px;
+  width: 99.55%;
+  margin-left: .5em;
+  top: 0;
+  position: relative;
+}
+
+.nav_wrapper{
+  display: inline-flex;
+  margin: 0;
+  margin-left: .2em;
+  height: 82px;
+  width: 99.55%;
+}
+
+.nav_left{
+  background-color: lightslategrey;
+  height: 100%;
+  width: 45%;
+  /*margin: 0;*/
+  /*vertical-align: middle;*/
+}
+
+.nav_middle{
+  margin: 0;
+  height: 100%;
+  width: 10%;
+}
+
+.nav_middle:hover{
+  margin: 0;
+  transition: .3s;
+  width: 10%;
+}
+
+.facebook{
+  height: 100%;
+  width: 100%;
+}
+
+.nav_right{
+  background-color: teal;
+  margin: 0;
+  height: 100%;
+  width: 45%;
+}
+
+.nav_name_left {
+  color: white;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3.8em;
+  margin: 0 auto;
+  height: 100%;
+  /*padding: 1em;*/
+  /*padding-top: 1em;*/
+  text-align: center;
+  width: auto;
+  vertical-align: middle;
+  /*white-space: pre;*/
+}
+
+.nav_content_right {
+  display: inline-flex;
+  color: white;
+  list-style: none;
+  margin-left: 0em;
+  padding: 0;
+  margin-top: 0;
+  height: 5em;
+  width: 70%;
+}
+
+.nav_options{
+  display: inline-block;
+  color: white;
+  font-family: 'NTR', sans-serif;
+  font-size: 1.3rem;
+  height: 102%;
+  margin: 0 auto;
+  padding-top: .8em;
+  text-decoration: none;
+  text-align: center;
+  width: 6.5em;
+}
+
+.nav_options:hover{
+  background-color: white;
+  color: black;
+  transition: .5s;
+}
+
+.services_page{
+  background-color: lightgrey;
+  display: inline-block;
+  font-size: 1em;
+  height: 43em;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 100;
+}
+
+.services_title{
+  color: teal;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+
+.services_text{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  text-indent: 1em;
+  text-align: center;
+  width: 80%;
+}
+
+.services_agent_portait{
+  display: block;
+  border: groove 5px;
+  box-shadow: 10px 10px 5px #888888;
+  margin: 0 auto;
+  height: 15em;
+}
+
+.fixed {
+  position: fixed;
+}
+/* nav bar stop----------------*/
+
+.page2_wrapper_content{
+    margin-top: 0em;
+    height: 38em;
+}
+
+.page2_wrapper_content_hidden{
+    display: none;
+}
+
+.page2_left_area{
+  display: inline-block;
+  margin-left: 2em;
+  margin-right: 0;
+  margin-top: 0;
+  width: 40%;
+  vertical-align: top;
+}
+
+.page2_name_title{
+  color: teal;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
+  margin: 0 auto;
+  margin-bottom: .5em;
+  text-align: center;
+}
+
+.page2_text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  margin: 0;
+  /*margin-bottom: 1em;*/
+  text-indent: 1em;
+}
+
+.page2_contact_text{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  padding: 0;
+  width: 10em;
+}
+
+.page2_image_box{
+  background-color: lightgrey;
+  border: groove 2px;
+  box-shadow: 10px 10px 5px #888888;
+  display: inline-block;
+  height: 50%;
+  margin-left: 2em;
+  /*margin-top: 3em;*/
+  margin-bottom: 2em;
+  width: 40%;
+}
+
+.page2_right_area{
+  display: inline-block;
+  margin: 0;
+  margin-left: 5em;
+  width: 41%;
+}
+
+.page2_contact_info{
+  color: black;
+  font-family: 'NTR', sans-serif;
+  vertical-align: top;
+}
+
+.page2_agent_right {
+  border: outset grey 3px;
+  box-shadow: 10px 10px 5px #888888;
+  height: 60%;
+  width: 100%;
+}
+
+.page2_contact_area {
+  margin: 0 auto;
+  margin-bottom: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+.page2_contact_title {
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  margin: 0;
+}
+
+.page2_contact_buttons{
+  display:inline-flex;
+}
+
+.page2_contact_input {
+  background-color: white;
+  border: darkslategrey solid 1px;
+  font-size: 1em;
+  height: 1.4em;
+  margin-left: .2em;
+  text-align: center;
+  padding-left: .2em;
+  width: 10em;
+}
+
+.page2_contact_submit{
+  /* IE10+ */
+  background-image: -ms-radial-gradient(center, ellipse farthest-corner, #F5F5F5 0%, #AFB0BD 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-radial-gradient(center, ellipse farthest-corner, #F5F5F5 0%, #AFB0BD 100%);
+  /* Opera */
+  background-image: -o-radial-gradient(center, ellipse farthest-corner, #F5F5F5 0%, #AFB0BD 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, #F5F5F5), color-stop(100, #AFB0BD));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #F5F5F5 0%, #AFB0BD 100%);
+  /* W3C Markup */
+  background-image: radial-gradient(ellipse farthest-corner at center, #F5F5F5 0%, #AFB0BD 100%);
+  border: darkslategrey solid 1px;
+  font-weight: 900;
+  height: 2em;
+  margin-left: .3em;
+  width: 5em;
+}
+
+.aboutMe_left_area{
+  display: inline-block;
+  margin-left: 2em;
+  margin-right: 0;
+  margin-top: 0;
+  width: 40%;
+  vertical-align: top;
+}
+
+.aboutMe_name_title{
+  color: teal;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+
+.aboutMe_text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  margin: 0;
+  margin-bottom: 1em;
+  text-indent: 1em;
+}
+
+/* AboutMe start *******************/
+.agent_portait{
+  border: groove 5px;
+  box-shadow: 10px 10px 5px #888888;
+  margin-left: 8em;
+  margin-top: 4em;
+}
+/* AboutMe end *******************/
+
+/* ContactMe start *******************/
+.contact_page{
+  background-color: lightgrey;
+  height: 40em;
+  width: 100%;
+}
+
+.contact_name_title{
+  color: teal;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
+  margin: 0;
+  padding-top: 1em;
+  text-align: center;
+}
+
+.contact_info_right{
+  display: inline-block;
+  margin-left: 5em;
+  width: 40%;
+  vertical-align: top;
+  margin-top: 3em;
+}
+
+.contact_info{
+  display: inline-block;
+  color: black;
+  font-family: 'NTR', sans-serif;
+  margin-left: 2em;
+}
+
+.contact_detail{
+  font-size: 1.5em;
+  line-height: 1em;
+  width: 10em;
+  vertical-align: top;
+}
+
+.contact_text{
+  margin: 0;
+}
+
+.contact_image{
+  box-shadow: 10px 10px 5px #888888;
+  display: inline-block;
+  height: 25em;
+  margin-top: 2em;
+  margin-left: 3em;
+  width: 35em;
+}
+
+
+.contact_agent_portrait{
+  border: groove 5px;
+  box-shadow: 10px 10px 5px #888888;
+  height: 15em;
+  margin-left: 8em;
+  width: 15em;
+}
+/* ContactMe end *******************/
+
+@media screen and (max-width: 1151px) and (min-width: 517px) {
+
+  .connect_mlsidx{
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 100%;
+  }
+
+
+
+  .nav_wrapper{
+    width: 100%;
+    font-size: .5em;
+    margin-left: 0;
+  }
+
+  .nav_placeholder{
+    background-color: yellow;
+    height: 0px;
+    width: 100%;
+  }
+
+  .nav_placeholder_grow{
+    border: solid 2px;
+    background-color: red;
+    height: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+
+  /*.nav_left{
+    background-color: lightslategrey;
+    margin: 0;
+    height: 100%;
+    width: 45%;
+  }*/
+
+  /*.nav_middle{
+    margin: 0;
+    height: 100%;
+    width: 10%;
+  }*/
+
+  /*.nav_middle:hover{
+    margin: 0;
+    transition: .3s;
+    width: 10%;
+  }*/
+
+  /*.nav_name_left {
+    color: white;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0;
+    padding-top: .4em;
+    text-align: center;
+    width: 50%;
+    white-space: pre;
+  }*/
+
+  /*.nav_content_right {
+    display: inline-flex;
+    color: white;
+    list-style: none;
+    margin-left: 0em;
+    padding: 0;
+    margin-top: 0;
+    height: 5em;
+    width: 70%;
+  }*/
+
+  .nav_options{
+    font-size: 3em;
+    margin: 0;
+    width: 6rem;
+
+  }
+/*
+  .nav_options:hover{
+    background-color: white;
+    color: black;
+    transition: .5s;
+  }*/
+
+}

@@ -9,15 +9,19 @@ export default React.createClass({
   },
   render(){
   return (
-    <div>
-      <NavBar/>
-      <section className="aboutMe_left_area">
-        <h1 className="aboutMe_name_title" style={{marginTop: "2em"}}>Agent Name</h1>
-        <p className="aboutMe_text">As a successful Real Estate Entrepreneur-my #1 objective is to help families achieve their real estate goals in selling or buying their home. </p>
-        <p className="aboutMe_text">With that said, not all real estate agents are created equal.</p>
-        <p className="aboutMe_text">I have aligned myself with some of the most successful experts in the real estate industry in San Antonio to help me to provide the best resources for my clients. I am a no nonsense business professional who will always put the needs of my clients first and foremost.</p>
+    <div id="aboutMe" className="aboutMe_page">
+      <br/>
+      <br/>
+      <section className="agent_image_name">
+        <img className="agent_portrait" src="/styles/Agent_Portrait.jpg"/>
+        <h1 className="agent_name">Agent Name</h1>
       </section>
-      <img className="agent_portait" src="/styles/Agent_Portrait.jpg"/>
+      <section  className="text">
+        <p>As a successful Real Estate Entrepreneur, my #1 objective is to help families achieve their real estate goals in selling or buying their home. </p>
+        <p>With that said, not all real estate agents are created equal.</p>
+        <p>I have aligned myself with some of the most successful experts in the real estate industry in San Antonio to help me to provide the best resources for my clients. I am a no nonsense business professional who will always put the needs of my clients first and foremost.</p>
+      </section>
+
     </div>
     )
   }
