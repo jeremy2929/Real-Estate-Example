@@ -1,54 +1,69 @@
 import React from 'react'
 import $ from 'jquery'
-import Page_Two from './Page_Two'
+import PageTwo from './PageTwo'
+import ContactMe from './ContactMe'
+import Services from './Services'
+import AboutMe from './AboutMe'
+import NavBar from './NavBar'
 
-$(document).ready(function() {
-  //Calculate the height of <header>
-  //Use outerHeight() instead of height() if have padding
-  var aboveHeight = $('header').outerHeight();
-  var aboveHeight = 623
-  //when scroll
-  $(window).scroll(function(){
-    //if scrolled down more than the header’s height
-    if ($(window).scrollTop() > aboveHeight){
-      // if yes, add “fixed” class to the <nav>
-      // add padding top to the #content  (value is same as the height of the nav)
-      $(".nav_wrapper").addClass('fixed')
-      $('.nav_placeholder').addClass('nav_placeholder_grow')
-      $('.page2_wrapper_content').css('margin-top','10em')
-    } else {
-      // when scroll up or less than aboveHeight,    remove the “fixed” class, and the padding-top
-      $(".nav_wrapper").removeClass('fixed')
-      $('.nav_placeholder').removeClass('nav_placeholder_grow')
-      $('.page2_wrapper_content').css('margin-top','5em')
-    }
-  })
-})
+var height = window.screen.height
+var width = window.screen.width
 
 export default React.createClass({
+  componentDidMount(){
+
+  },
   DownClick(){
-    var element = document.getElementById("Page2")
+    var element = document.getElementById("contactPage")
     // var alignWithTop = true
     element.scrollIntoView({behavior: "smooth"})
   },
   render(){
-  return (
-    <div>
-      <div className="outer-container">
-        <div className="inner-container">
-          <div className="video-overlay">
-            <h1 className="main_title">Agent Name</h1>
-            <h2 className="main_subtitle">Finding your next home...</h2>
-            <button className="left_button">Buy</button>
-            <button className="right_button">Sell</button>
-            <img className="connect_mlsidx" src="/styles/MLS_Search.jpg"/>
-            <button className="down_button" onClick={this.DownClick}>&#8595;</button>
+    if (height > 700 && width > 1200) {
+      return (
+          <div className="outer-container">
+            <div className="inner-container">
+              <div className="video-overlay">
+                <h1 className="main_title">Agent Name</h1>
+                <h2 className="main_subtitle">Finding your next home...</h2>
+                <div className="mainPage_buttons">
+                  <button className="left_button">Buy</button>
+                  <button className="right_button">Sell</button>
+                </div>
+                <img className="connect_mlsidx" src="/styles/MLS_Search.jpg"/>
+                <button id="downButton" ref="downButton" className="down_button" onClick={this.DownClick}>&#8595;</button>
+              </div>
+              <video id="player" className="video" src="/styles/movie.mp4" autoPlay loop></video>
+            </div>
+            <NavBar/>
+            <Services/>
+            <AboutMe/>
+            <ContactMe/>
           </div>
-          <video id="player" src="/styles/movie.mp4" autoPlay loop></video>
+        )
+    } else {
+      return(
+        <div className="entire_wrapper">
+          <NavBar/>
+          <div className="outer-container">
+            <div className="inner-container">
+              <div className="video-overlay">
+                <h1 className="main_title">Agent Name</h1>
+                <h2 className="main_subtitle">Finding your next home...</h2>
+                <div className="mainPage_buttons">
+                  <button className="left_button">Buy</button>
+                  <button className="right_button">Sell</button>
+                </div>
+                <img className="connect_mlsidx" src="/styles/MLS_Search.jpg"/>
+              </div>
+              <img className="home_image_box" src="/styles/house4.jpg"/>
+            </div>
+          </div>
+          <Services/>
+          <AboutMe/>
+          <ContactMe/>
         </div>
-      </div>
-      <Page_Two/>
-    </div>
-    )
+      )
+    }
   }
 })

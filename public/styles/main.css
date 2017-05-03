@@ -3,208 +3,102 @@
 }
 
 body{
-  height: 90em;
+  height: 100%;
   width: 100%;
   margin: 0;
 }
 
-#background-video{
-  width: 100%;
-  float: left;
-  top: 0;
-  padding: 0;
-  position: fixed; // optional depending on what you want
+.hidden{
+  display: none;
 }
 
-.main_title {
-  font-family: 'Comfortaa', sans-serif;
-  font-size: 3em;
-  height: auto;
-  text-align: center;
+.home_image_box{
+  height: 100%;
+  width: 100%;
+}
+
+.video-overlay{
+  position: absolute;
+  color: white;
   margin: 0 auto;
-  padding: 0;
-  width: 10em;
+  margin-top: 2em;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.main_title{
+  display: inline-block;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 5em;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 1em;
+  width: auto;
 }
 
 .main_subtitle{
   font-family: 'Comfortaa', sans-serif;
-  font-size: 1em;
-  height: 2em;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 1em;
-  width: 10em;
-}
-
-.outer-container {
-  height: 39.1em;
-  text-align: center;
-  width: 100%;
-}
-
-.inner-container {
-
-}
-
-.video-overlay {
-  display: block;
-  position: absolute;
   font-size: 2em;
-  font-family: Helvetica;
-  color: #FFF;
+  height: auto;
   margin: 0 auto;
-  margin-top: 3em;
-  width: 100%;
-  z-index: 2;
+  margin-top: 7em;
+  width: auto;
 }
 
-video {
-  width: 100%;
-  height: 44.2em;
+.mainPage_buttons{
+  display: block;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .left_button{
   background-color: Transparent;
   border: solid white 2px;
   color: white;
-  height: 4em;
+  font-size: 2em;
   outline: 0;
-  width: 10em;
+  width: 5em;
 }
 
 .right_button{
   background-color: Transparent;
   border: solid white 2px;
   color: white;
-  height: 4em;
+  font-size: 2em;
   margin-left: 1em;
   outline: 0;
-  width: 10em;
+  width: 5em;
 }
 
-.connect_mlsidx{
-    display: block;
-    height: 30%;
-    margin: 0 auto;
-    margin-top: 1em;
-    width: 60%;
-}
-
-.down_button{
-  background-color: Transparent;
-  color: white;
-  display: block;
-  font-size: .5em;
-  height: 3em;
-  margin: 0 auto;
-  margin-top: 3em;
-  outline: 0;
-  width: 3em;
-  -moz-border-radius: 50px;
-	-webkit-border-radius: 100px;
-	border-radius: 100px;
-  text-align: center;
-  text-decoration: none;
-}
-
-/* second page start ----------*/
-/* nav bar start----------------*/
-#wrapper {
-  height: 20em;
-  width: 100%x;
-}
-
-.page2_wrapper{
-  background-image: url("/styles/hood.jpg");
-  margin: 0;
-}
-
-header {
-  text-align:center;
-}
-
-.nav_placeholder{
-  background-color: yellow;
-  height: 0px;
-  width: 100%;
-}
-
-.nav_placeholder_grow{
-  border: solid 2px;
-  background-color: red;
-  height: 0;
-  margin: 0;
-  width: 100%;
-}
-
-nav {
-  background: lightgrey;
-  height: 82px;
-  width: 99.55%;
-  margin-left: .5em;
-  top: 0;
-  position: relative;
-}
-
-.nav_wrapper{
+.nav_mobile_wrapper{
   display: inline-flex;
+  height: 82px;
   margin: 0;
   margin-left: .2em;
-  height: 82px;
+  width: 99.55%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 2;
 }
 
 .nav_left{
   background-color: lightslategrey;
-  margin: 0;
   height: 100%;
   width: 45%;
 }
 
 .nav_middle{
-  /*background-image: url("/styles/facebook.png");*/
-  /*background-color: darkgrey;*/
   margin: 0;
   height: 100%;
   width: 10%;
 }
 
-.nav_middle:hover{
-  /*background-image: url("/styles/facebook_name.png");*/
-  margin: 0;
-  transition: .3s;
-  width: 10%;
-}
-
-/*.fa-facebook{
-  border-radius: 100px;
-  color: #3b5998;
-  margin-top: .05em;
-  margin-left: .5em;
-  padding: .3em;
-  width: 80px;
-	height: 95%;``
-	background: white;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 100px;
-	border-radius: 100px;
-  text-align: center;
-  text-decoration: none;
-}*/
-
 .facebook{
-  /*border-radius: 100px;*/
-  /*color: #3b5998;*/
-  /*margin-top: .05em;*/
-  /*margin-left: .5em;*/
-  /*padding: .3em;*/
-  /*width: 70px;*/
-  /*height: 95%;*/
-  /*background: white;*/
-  /*-moz-border-radius: 50px;
-  -webkit-border-radius: 100px;
-  border-radius: 100px;
-  text-align: center;
-  text-decoration: none;*/
   height: 100%;
   width: 100%;
 }
@@ -216,42 +110,26 @@ nav {
   width: 45%;
 }
 
-.nav_name_left {
+.nav_name_left{
   color: white;
   display: block;
   font-family: 'Open Sans', sans-serif;
-  font-size: 2em;
+  font-size: 3.8em;
   margin: 0 auto;
-  height: 100%;
-  padding: 0;
-  padding-top: .4em;
   text-align: center;
-  width: 50%;
-  white-space: pre;
-}
-
-.nav_content_right {
-  display: inline-flex;
-  color: white;
-  list-style: none;
-  margin-left: 0em;
-  padding: 0;
-  margin-top: 0;
-  height: 5em;
-  width: 70%;
 }
 
 .nav_options{
-  display: inline-block;
+  display: block;
   color: white;
   font-family: 'NTR', sans-serif;
-  font-size: 1.3em;
+  font-size: 2.5rem;
   height: 102%;
   margin: 0 auto;
-  padding-top: 1em;
+  padding-top: .1em;
   text-decoration: none;
   text-align: center;
-  width: 6.5em;
+  width: 5em;
 }
 
 .nav_options:hover{
@@ -260,226 +138,24 @@ nav {
   transition: .5s;
 }
 
-.services_page{
-  background-color: lightgrey;
-  display: inline-block;
-  font-size: 1em;
-  height: 60em;
-  margin: 0 auto;
-  width: 100%;
-  z-index: 100;
+.nav_content_right{
+  display: inline-flex;
+  color: white;
+  list-style: none;
+  margin-left: 0em;
+  padding: 0;
+  text-decoration: none;
+  margin-top: 0;
+  height: 5em;
+  width: 70%;
 }
 
-.services_title{
+.agent_name{
   color: teal;
   font-family: 'Open Sans', sans-serif;
   font-size: 2em;
-  text-align: center;
-}
-
-.services_text{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-  margin: 0 auto;
-  margin-top: 2em;
-  margin-bottom: 3em;
-  text-indent: 1em;
-  text-align: center;
-  width: 80%;
-}
-
-.services_agent_portait{
-  display: block;
-  border: groove 5px;
-  box-shadow: 10px 10px 5px #888888;
-  margin: 0 auto;
-  height: 20em;
-  /*top: 3em;*/
-  /*left: 20em;*/
-  /*display: inline-block;*/
-}
-
-.fixed {
-  position: fixed;
-}
-/* nav bar stop----------------*/
-
-.page2_wrapper_content{
-    margin-top: 0em;
-}
-
-.page2_wrapper_content_hidden{
-    display: none;
-}
-
-.page2_left_area{
-  display: inline-block;
-  margin-left: 2em;
-  margin-right: 0;
-  margin-top: 0;
-  width: 40%;
-  vertical-align: top;
-}
-
-.page2_name_title{
-  color: teal;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 3em;
-  margin: 0 auto;
-  margin-bottom: 1em;
-  text-align: center;
-}
-
-.page2_text {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
   margin: 0;
-  margin-bottom: 1em;
-  text-indent: 1em;
-}
-
-.page2_contact_text{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-  margin: 0 auto;
-  margin-bottom: 1em;
-  width: 10em;
-}
-
-.page2_image_box{
-  background-color: lightgrey;
-  border: groove 2px;
-  box-shadow: 10px 10px 5px #888888;
-  display: inline-block;
-  height: 10em;
-  margin-left: 2em;
-  margin-top: 3em;
-  margin-bottom: 2em;
-  width: 12em;
-}
-
-.page2_right_area{
-  /*border: solid 2px;*/
-  display: inline-block;
-  margin: 0;
-  margin-left: 5em;
-  width: 41%;
-}
-
-.page2_contact_info{
-  /*border: solid 2px;*/
-  display: inline-block;
-  color: black;
-  float: left;
-  font-family: 'NTR', sans-serif;
-  /*margin-left: 3em;*/
-}
-
-/*.allCity_image_right{
-  display: inline-block;
-  height: 8em;
-  float: right;
-  width: 8em;
-}*/
-
-.page2_agent_right {
-  border: outset grey 3px;
-  box-shadow: 10px 10px 5px #888888;
-  height: 20em;
-  width: 35em;
-}
-
-.page2_contact_area {
-  margin: 0 auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  width: 100%;
   text-align: center;
-}
-
-.page2_contact_title {
-  color: black;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-  margin: 0;
-}
-
-.page2_contact_buttons{
-  display:inline-flex;
-}
-
-.page2_contact_input {
-  background-color: white;
-  border: darkslategrey solid 1px;
-  font-size: 1em;
-  height: 1.4em;
-  margin-left: .2em;
-  text-align: center;
-  padding-left: .2em;
-  width: 10em;
-}
-
-.page2_contact_submit{
-  /* IE10+ */
-  background-image: -ms-radial-gradient(center, ellipse farthest-corner, #F5F5F5 0%, #AFB0BD 100%);
-  /* Mozilla Firefox */
-  background-image: -moz-radial-gradient(center, ellipse farthest-corner, #F5F5F5 0%, #AFB0BD 100%);
-  /* Opera */
-  background-image: -o-radial-gradient(center, ellipse farthest-corner, #F5F5F5 0%, #AFB0BD 100%);
-  /* Webkit (Safari/Chrome 10) */
-  background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, #F5F5F5), color-stop(100, #AFB0BD));
-  /* Webkit (Chrome 11+) */
-  background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #F5F5F5 0%, #AFB0BD 100%);
-  /* W3C Markup */
-  background-image: radial-gradient(ellipse farthest-corner at center, #F5F5F5 0%, #AFB0BD 100%);
-  border: darkslategrey solid 1px;
-  font-weight: 900;
-  height: 2em;
-  margin-left: .3em;
-  width: 5em;
-}
-
-.aboutMe_left_area{
-  display: inline-block;
-  margin-left: 2em;
-  margin-right: 0;
-  margin-top: 0;
-  width: 40%;
-  vertical-align: top;
-}
-
-.aboutMe_name_title{
-  color: teal;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 3em;
-  margin: 0 auto;
-  margin-bottom: 1em;
-  text-align: center;
-}
-
-
-.aboutMe_text {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-  margin: 0;
-  margin-bottom: 1em;
-  text-indent: 1em;
-}
-
-/* AboutMe start *******************/
-.agent_portait{
-  border: groove 5px;
-  box-shadow: 10px 10px 5px #888888;
-  margin-left: 8em;
-  margin-top: 4em;
-}
-/* AboutMe end *******************/
-
-/* ContactMe start *******************/
-.contact_page{
-  background-color: lightgrey;
-  height: 40em;
-  width: 100%;
 }
 
 .contact_name_title{
@@ -491,44 +167,275 @@ nav {
   text-align: center;
 }
 
-.contact_info_right{
-  display: inline-block;
-  /*border: solid 2px;*/
-  margin-left: 5em;
-  width: 40%;
-}
 
 .contact_info{
   display: inline-block;
   color: black;
   font-family: 'NTR', sans-serif;
-  margin-left: 2em;
-  vertical-align: top;
+  margin-top: 2em;
+  width: 100%;
 }
 
 .contact_detail{
-  font-size: 1.5em;
-  height: auto;
-  margin: 0;
-  width: 9em;
+  font-size: 2em;
+  line-height: 1em;
+  width: 20em;
+  vertical-align: top;
+  white-space: pre;
+}
+
+.contact_right{
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  width: 100%;
+  text-align: center;
 }
 
 .contact_image{
-  /*border: solid 1px;*/
   box-shadow: 10px 10px 5px #888888;
-  display: inline-block;
-  height: 25em;
-  margin-top: 2em;
-  margin-left: 3em;
-  width: 35em;
+  height: 20em;
+  width: 30em;
 }
 
+.contact_buttons{
 
-.contact_agent_portrait{
+  display: inline-flex;
+}
+
+.agent_portait{
+  display: block;
   border: groove 5px;
   box-shadow: 10px 10px 5px #888888;
-  height: 10em;
-  margin-left: 10em;
-  width: 10em;
+  height: 15em;
+  margin: 0 auto;
+  margin-top: 1em;
+  vertical-align: top;
+  width: 15em;
 }
-/* ContactMe end *******************/
+
+.agent_name{
+  color: teal;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  margin: 1em;
+  text-align: center;
+}
+
+.contact_title {
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.contact_input {
+  border: darkslategrey solid 1px;
+  font-size: 2em;
+  margin-left: 1em;
+  width: 30%;
+  text-align: center;
+}
+
+.contact_submit{
+  background-image: -ms-radial-gradient(center, ellipse farthest-corner, #F5F5F5 0%, #AFB0BD 100%);
+  background-image: -moz-radial-gradient(center, ellipse farthest-corner, #F5F5F5 0%, #AFB0BD 100%);
+  background-image: -o-radial-gradient(center, ellipse farthest-corner, #F5F5F5 0%, #AFB0BD 100%);
+  background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, #F5F5F5), color-stop(100, #AFB0BD));
+  background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #F5F5F5 0%, #AFB0BD 100%);
+  background-image: radial-gradient(ellipse farthest-corner at center, #F5F5F5 0%, #AFB0BD 100%);
+  border: darkslategrey solid 1px;
+  font-weight: 900;
+  font-size: 2em;
+  margin-left: 1em;
+  width: 5em;
+}
+
+.services_title{
+  color: teal;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+
+.services_text{
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  margin: 2em;
+  margin-bottom: 0em;
+  text-indent: 1em;
+}
+
+.agent_portrait{
+  display: block;
+  border: groove 5px;
+  box-shadow: 10px 10px 5px #888888;
+  height: 15em;
+  margin: 0 auto;
+  margin-top: 1em;
+  vertical-align: top;
+  width: 15em;
+}
+
+.aboutMe_text{
+  font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+  margin: 2em;
+  margin-bottom: 0em;
+  text-indent: 1em;
+}
+
+
+
+@media screen and (min-width: 1280px) and (max-width: 1439px){
+
+  body{
+    background-color: lightgrey;
+    height: 130em;
+
+  }
+
+  .video{
+    display: block;
+    height: 38.8em;
+    margin: 0 auto;
+  }
+
+  .main_title{
+    margin-top: .2em;
+  }
+
+  .video-overlay{
+    position: absolute;
+    color: white;
+    margin: 0 auto;
+    margin-top: 2em;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .main_subtitle{
+    margin-top: .5em;
+  }
+
+  .down_button{
+    background-color: Transparent;
+    border: solid 2px;
+    color: white;
+    display: block;
+    font-size: 2em;
+    height: 3em;
+    margin: 0 auto;
+    margin-top: 3em;
+    outline: 0;
+    width: 3em;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .nav_bar{
+    display: inline-flex;
+    margin: 0;
+    margin-left: .2em;
+    height: 82px;
+    width: 99.55%;
+    z-index: 2;
+  }
+
+  .nav_bar_scrolled{
+    position: fixed;
+    top: 0;
+    margin-bottom: -82px;
+    margin-left: .2em;
+  }
+
+  .nav_options{
+    font-size: 1.3rem;
+    padding-top: .8em;
+    width: 6.5em;
+  }
+
+  .nav_middle:hover{
+    margin: 0;
+    transition: .3s;
+    width: 10%;
+  }
+
+  .fixed {
+    position: fixed;
+  }
+
+  .services_page{
+    height: 42em;
+
+  }
+
+  .agent_image_name{
+    color: teal;
+    display: inline-block;
+    height: 30em;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 1em;
+    width: 40%;
+  }
+
+  .agent_portrait{
+    border: groove 4px;
+    box-shadow: 10px 10px 5px #888888;
+    display: inline-block;
+    height: 20em;
+    width: 20em;
+  }
+
+  .text{
+    display: inline-block;
+    font-size: 1.2em;
+    margin-top: 2em;
+    margin-left: 2em;
+    width: 50%;
+  }
+
+  .agent_name{
+    font-size: 2em;
+  }
+
+  .aboutMe_page{
+    background-color: grey;
+    font-size: 1.4em;
+    height: 40em;
+  }
+
+  .contact_page{
+    background-color: dimgrey;
+    height: 40em;
+  }
+
+  .contact_left{
+    display: inline-block;
+    font-size: .8em;
+    margin: 0 auto;
+    margin-top: 5em;
+    vertical-align: top;
+    text-align: center;
+    width: 50%;
+  }
+
+  .contact_right{
+    display: inline-block;
+    margin-left: 5em;
+    margin-top: 3em;
+    width: 40%;
+  }
+
+  .contact_input_area{
+    font-size: .7em;
+  }
+
+}
