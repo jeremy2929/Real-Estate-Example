@@ -10,8 +10,7 @@ export default React.createClass({
   render(){
   return (
     <div id="aboutMe" className="aboutMe_page">
-      <br/>
-      <br/>
+      <br className="about_lineBreak"/>
       <section className="agent_image_name">
         <img className="agent_portrait" src="/styles/Agent_Portrait.jpg"/>
         <h1 className="agent_name">Agent Name</h1>

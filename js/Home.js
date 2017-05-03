@@ -15,7 +15,6 @@ export default React.createClass({
   },
   DownClick(){
     var element = document.getElementById("contactPage")
-    // var alignWithTop = true
     element.scrollIntoView({behavior: "smooth"})
   },
   render(){

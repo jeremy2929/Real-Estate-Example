@@ -34,17 +34,19 @@ export default React.createClass({
      })
    },
    Services(){
-    if (window.scrollY < 700 || window.scrollY > 1450) {
+     if (window.scrollY < 700 || window.scrollY > 1450) {
       $(".nav_bar").removeClass("nav_bar_scrolled");
       $('.services_page').css('margin-top','0em')
        var element = document.getElementById("Services")
       element.scrollIntoView()
-    }
+     }
    },
    aboutMe(){
      console.log(window.scrollY);
-     var element = document.getElementById("aboutMe")
-     element.scrollIntoView({behavior: "smooth"})
+     if (window.scrollY < 1450 || window.scrollY > 1600) {
+       var element = document.getElementById("aboutMe")
+       element.scrollIntoView({behavior: "smooth"})
+     }
    },
    contactMe(){
      var element = document.getElementById("contactPage")

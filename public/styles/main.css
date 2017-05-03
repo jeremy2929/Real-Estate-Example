@@ -3,6 +3,7 @@
 }
 
 body{
+  background-color: lightgrey;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -148,6 +149,10 @@ body{
   margin-top: 0;
   height: 5em;
   width: 70%;
+}
+
+.services_title{
+  margin-top: 0;
 }
 
 .agent_name{
@@ -361,9 +366,10 @@ body{
   }
 
   .services_page{
-    height: 42em;
-
+    background-image: url('/styles/hood.jpg');
+    height: 46em;
   }
+
 
   .agent_image_name{
     color: teal;
@@ -397,13 +403,17 @@ body{
   }
 
   .aboutMe_page{
-    background-color: grey;
+    background-image: url('/styles/hood2.jpg');
     font-size: 1.4em;
-    height: 40em;
+    height: 35em;
+  }
+
+  .about_lineBreak{
+    line-height: 2em;
   }
 
   .contact_page{
-    background-color: dimgrey;
+    background-color: lightgrey;
     height: 40em;
   }
 
@@ -426,6 +436,11 @@ body{
 
   .contact_input_area{
     font-size: .7em;
+  }
+
+  .house4{
+    opacity: .3;
+    margin-left: 5em;
   }
 
 }
