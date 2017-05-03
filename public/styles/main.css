@@ -227,6 +227,13 @@ body{
   text-align: center;
 }
 
+.contact_agent_name{
+  color: teal;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+
 .contact_title {
   color: black;
   font-family: 'Open Sans', sans-serif;
@@ -239,7 +246,7 @@ body{
   border: darkslategrey solid 1px;
   font-size: 2em;
   margin-left: 1em;
-  width: 30%;
+  width: 33%;
   text-align: center;
 }
 
@@ -288,7 +295,10 @@ body{
   body{
     background-color: lightgrey;
     height: 130em;
+  }
 
+  .outer_container{
+    background-color: yellow;
   }
 
   .video{
@@ -367,7 +377,7 @@ body{
 
   .services_page{
     background-image: url('/styles/hood.jpg');
-    height: 46em;
+    height: 43em;
   }
 
 
@@ -413,7 +423,7 @@ body{
   }
 
   .contact_page{
-    background-color: lightgrey;
+    background-image: url('/styles/hood3.jpg');
     height: 40em;
   }
 
@@ -427,11 +437,23 @@ body{
     width: 50%;
   }
 
+  .contact_agent_name{
+    color: black;
+  }
+
   .contact_right{
+    background-color: white;
+    border: solid black 2px;
     display: inline-block;
-    margin-left: 5em;
-    margin-top: 3em;
-    width: 40%;
+    margin-left: 2em;
+    margin-top: 6em;
+    padding: 2em;
+    width: 43%;
+  }
+
+  .contact_image{
+    border: solid black 2px;
+    height: 20em;
   }
 
   .contact_input_area{

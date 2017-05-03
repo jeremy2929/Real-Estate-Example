@@ -41,11 +41,11 @@ export default React.createClass({
           </table>
           <section className="agent_image_name">
             <img className="agent_portrait" src="/styles/Agent_Portrait.jpg"/>
-            <h1 className="agent_name">Agent Name</h1>
+            <h1 className="contact_agent_name">Agent Name</h1>
           </section>
         </div>
         <div className="contact_right">
-          <img className="contact_image" src="/styles/house2.jpg"/>
+          <img className="contact_image" src="/styles/house3.jpg"/>
           <div className="contact_input_area">
             <h1 className="contact_title">Or, simply enter your information and we will contact you:</h1>
             <div className="contact_buttons">

@@ -34,7 +34,7 @@ export default React.createClass({
      })
    },
    Services(){
-     if (window.scrollY < 700 || window.scrollY > 1450) {
+     if (window.scrollY < 700 || window.scrollY > 1410) {
       $(".nav_bar").removeClass("nav_bar_scrolled");
       $('.services_page').css('margin-top','0em')
        var element = document.getElementById("Services")
