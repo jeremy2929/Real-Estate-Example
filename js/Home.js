@@ -20,8 +20,8 @@ export default React.createClass({
   render(){
     if (height > 700 && width > 1200) {
       return (
-          <div className="outer-container">
-            <div className="inner-container">
+          <div className="outer_container">
+            <div className="inner_container">
               <div className="video-overlay">
                 <h1 className="main_title">Agent Name</h1>
                 <h2 className="main_subtitle">Finding your next home...</h2>

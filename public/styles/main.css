@@ -294,17 +294,18 @@ body{
 
   body{
     background-color: lightgrey;
-    height: 130em;
-  }
-
-  .outer_container{
-    background-color: yellow;
+    height: 120em;
   }
 
   .video{
     display: block;
     height: 38.8em;
+    /*height: 44.4em;*/
     margin: 0 auto;
+  }
+
+  .outer_container{
+      height: 40em;
   }
 
   .main_title{
@@ -377,7 +378,11 @@ body{
 
   .services_page{
     background-image: url('/styles/hood.jpg');
-    height: 43em;
+    height: 44em;
+  }
+
+  .services_break{
+    line-height: 7em;
   }
 
 
@@ -403,7 +408,7 @@ body{
   .text{
     display: inline-block;
     font-size: 1.2em;
-    margin-top: 2em;
+    margin-top: 1em;
     margin-left: 2em;
     width: 50%;
   }
@@ -419,7 +424,7 @@ body{
   }
 
   .about_lineBreak{
-    line-height: 2em;
+    line-height: 3em;
   }
 
   .contact_page{

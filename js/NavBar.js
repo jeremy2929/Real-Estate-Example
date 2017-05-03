@@ -9,10 +9,10 @@ if (height > 700 && width > 1200) {
   $(window).scroll(function() {
     if( $(this).scrollTop() > 620 ) {
       $(".nav_bar").addClass("nav_bar_scrolled");
-      $('.services_page').css('margin-top','10em')
+      $('.services_page').css('margin-top','5em')
     } else {
       $(".nav_bar").removeClass("nav_bar_scrolled")
-      $('.services_page').css('margin-top','5em')
+      $('.services_page').css('margin-top','0em')
     }
   });
 }
@@ -34,21 +34,23 @@ export default React.createClass({
      })
    },
    Services(){
-     if (window.scrollY < 700 || window.scrollY > 1410) {
-      $(".nav_bar").removeClass("nav_bar_scrolled");
-      $('.services_page').css('margin-top','0em')
+     console.log(window.scrollY);
+     if (window.scrollY < 622 || window.scrollY > 630) {
+       $(".nav_bar").removeClass("nav_bar_scrolled");
+       $('.services_page').css('margin-top','0em')
        var element = document.getElementById("Services")
-      element.scrollIntoView()
+       element.scrollIntoView()
      }
    },
    aboutMe(){
      console.log(window.scrollY);
-     if (window.scrollY < 1450 || window.scrollY > 1600) {
+     if (window.scrollY < 1406 || window.scrollY > 1430) {
        var element = document.getElementById("aboutMe")
        element.scrollIntoView({behavior: "smooth"})
      }
    },
    contactMe(){
+     console.log(window.scrollY);
      var element = document.getElementById("contactPage")
      element.scrollIntoView({behavior: "smooth"})
    },
