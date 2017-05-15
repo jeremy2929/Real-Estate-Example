@@ -7,7 +7,6 @@ export default React.createClass({
     return(
       <header className="header_bar">
         <div>
-
         </div>
       </header>
     )
