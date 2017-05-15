@@ -19,7 +19,7 @@ body{
 }
 
 .outer_container{
-    height: auto;
+  height: auto;
 }
 
 .video_overlay{
@@ -81,7 +81,7 @@ body{
   height: 62px;
   margin: 0;
   margin-left: .2em;
-  width: 99.55%;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -92,7 +92,7 @@ body{
 
 .nav_left{
   background-color: lightslategrey;
-  height: 100%;
+  height: 62px;
   width: 45%;
 }
 
@@ -118,8 +118,11 @@ body{
   color: white;
   display: block;
   font-family: 'Open Sans', sans-serif;
-  font-size: 3em;
+  font-size: 2.5em;
+  height: 62px;
   margin: 0 auto;
+  margin-top: 0;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -297,61 +300,28 @@ body{
 }
 
 
-@media screen and (min-width: 1020px) {
+/*@media screen and (min-width: 1020px) {*/
+
+  .home_image_box{
+    height: 477px;
+    width: 1009px;
+  }
 
   .main_title{
-    margin-top: 3%;
+    margin-top: 2%;
   }
 
   .main_subtitle{
-    margin-top: 20%;
-  }
-
-  .home_image_box{
-    height: 500px;
-    width: 1000px;
-  }
-
-  body{
-    height: auto;
-  }
-
-  .video{
-    display: block;
-    height: 91vh;
-    margin: 0 auto;
-  }
-
-  .outer_container{
-    height: auto;
+    margin-top: 0;
+    margin-bottom: 13%;
   }
 
   .video_overlay{
     position: absolute;
     color: white;
     margin: 0 auto;
-    margin-top: 2em;
     text-align: center;
-    width: 100%;
     z-index: 1;
-  }
-
-  .down_button{
-    background-color: Transparent;
-    border: solid 2px;
-    color: white;
-    display: block;
-    font-size: 2em;
-    height: 3em;
-    margin: 0 auto;
-    margin-top: 3em;
-    outline: 0;
-    width: 3em;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 100px;
-    border-radius: 100px;
-    text-align: center;
-    text-decoration: none;
   }
 
   .nav_bar{
@@ -369,10 +339,10 @@ body{
   }
 
   .nav_options{
-    font-size: 1.3rem;
+    font-size: .5em;
     padding-top: .8em;
     outline: none;
-    width: 6.5em;
+    width: 7em;
   }
 
   .nav_middle:hover{
@@ -386,18 +356,17 @@ body{
   }
 
   .services_page{
-    margin-top: -40px;
-    height: 42em;
+    margin-top: 0;
   }
 
   .services_break{
-    line-height: 7em;
+    line-height: 4em;
   }
 
   .agent_image_name{
     color: teal;
     display: inline-block;
-    height: 30em;
+    height: 20%;
     margin: 0 auto;
     text-align: center;
     vertical-align: top;
@@ -415,7 +384,7 @@ body{
 
   .text{
     display: inline-block;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-top: 1em;
     margin-left: 2em;
     width: 50%;
@@ -426,7 +395,7 @@ body{
   }
 
   .aboutMe_page{
-    font-size: 1.4em;
+    font-size: 1em;
     height: 35em;
   }
 
@@ -464,7 +433,8 @@ body{
 
   .contact_image{
     border: solid black 2px;
-    height: 20em;
+    height: 15em;
+    width: 20em;
   }
 
   .contact_input_area{
@@ -475,7 +445,8 @@ body{
     opacity: .3;
     margin-left: 5em;
   }
-}
+/*}*/
+
 
 @media screen and (min-width: 1150px) {
 
@@ -497,11 +468,25 @@ body{
   }
 
   .nav_options{
+    padding-top: .8em;
     font-size: 1.2rem;
   }
 
   .services_break{
     line-height: 4em;
+  }
+
+  .aboutMe_page{
+    font-size: 1.2em;
+  }
+
+  .contact_image{
+    height: 15em;
+    width: 25em;
+  }
+
+  .contact_input {
+    font-size: 1.5em;
   }
 }
 
@@ -513,7 +498,15 @@ body{
   }
 
   .main_subtitle{
-    color: black;
+    margin-bottom: 26%;
+  }
+
+  .nav_left{
+    padding-bottom: .3em;
+  }
+
+  .services_break{
+    line-height: 5em;
   }
 }
 
