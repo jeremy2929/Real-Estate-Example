@@ -20,7 +20,20 @@ if (height > 790 && width > 1270) {
 if (height > 710 && height < 791 && width > 1150 && width < 1271) {
   var navBar = $(".nav_bar")
   $(window).scroll(function() {
-    if( $(this).scrollTop() > 550 ) {
+    if( $(this).scrollTop() > 555 ) {
+      $(".nav_bar").addClass("nav_bar_scrolled");
+      $('.services_page').css('margin-top','4em')
+    } else {
+      $(".nav_bar").removeClass("nav_bar_scrolled")
+      $('.services_page').css('margin-top','0em')
+    }
+  });
+}
+
+if (height > 530 && height < 711 && width > 1000 && width < 1151) {
+  var navBar = $(".nav_bar")
+  $(window).scroll(function() {
+    if( $(this).scrollTop() > 480 ) {
       $(".nav_bar").addClass("nav_bar_scrolled");
       $('.services_page').css('margin-top','4em')
     } else {

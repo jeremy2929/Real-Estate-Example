@@ -10,10 +10,10 @@ var height = window.screen.height
 var width = window.screen.width
 
 export default React.createClass({
-  DownClick(){
-    var element = document.getElementById("contactPage")
-    element.scrollIntoView({behavior: "smooth"})
-  },
+  // DownClick(){
+  //   var element = document.getElementById("contactPage")
+  //   element.scrollIntoView({behavior: "smooth"})
+  // },
   // <video id="player" className="video" src="/styles/movie.mp4" autoPlay loop></video>
   // <button id="downButton" ref="downButton" className="down_button" onClick={this.DownClick}>&#8595;</button>
 
