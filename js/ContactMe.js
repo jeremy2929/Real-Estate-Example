@@ -22,7 +22,7 @@ export default React.createClass({
               <tr>
                 <th className="contact_detail">email:</th>
                 <td className="contact_detail">
-                  <a href="mailto:jeremy2929@twc.com" data-rel="external">mailto:agentName@gmail.com</a>
+                  <a className="contact_email" href="mailto:jeremy2929@twc.com" data-rel="external">mailto:agentName@gmail.com</a>
                 </td>
               </tr>
               <tr>

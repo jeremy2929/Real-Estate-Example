@@ -4,12 +4,25 @@ import $ from 'jquery'
 
 var height = window.screen.height
 var width = window.screen.width
-if (height > 700 && width > 1200) {
+if (height > 790 && width > 1270) {
   var navBar = $(".nav_bar")
   $(window).scroll(function() {
-    if( $(this).scrollTop() > 620 ) {
+    if( $(this).scrollTop() > 636 ) {
       $(".nav_bar").addClass("nav_bar_scrolled");
-      $('.services_page').css('margin-top','5em')
+      $('.services_page').css('margin-top','4em')
+    } else {
+      $(".nav_bar").removeClass("nav_bar_scrolled")
+      $('.services_page').css('margin-top','0em')
+    }
+  });
+}
+
+if (height > 710 && height < 791 && width > 1150 && width < 1271) {
+  var navBar = $(".nav_bar")
+  $(window).scroll(function() {
+    if( $(this).scrollTop() > 550 ) {
+      $(".nav_bar").addClass("nav_bar_scrolled");
+      $('.services_page').css('margin-top','4em')
     } else {
       $(".nav_bar").removeClass("nav_bar_scrolled")
       $('.services_page').css('margin-top','0em')
@@ -34,28 +47,25 @@ export default React.createClass({
      })
    },
    Services(){
-     console.log(window.scrollY);
-     if (window.scrollY < 622 || window.scrollY > 630) {
+     if (window.scrollY < 700 || window.scrollY > 705) {
        $(".nav_bar").removeClass("nav_bar_scrolled");
        $('.services_page').css('margin-top','0em')
        var element = document.getElementById("Services")
-       element.scrollIntoView()
+       element.scrollIntoView({behavior: "smooth"})
      }
    },
    aboutMe(){
-     console.log(window.scrollY);
      if (window.scrollY < 1406 || window.scrollY > 1430) {
        var element = document.getElementById("aboutMe")
        element.scrollIntoView({behavior: "smooth"})
      }
    },
    contactMe(){
-     console.log(window.scrollY);
      var element = document.getElementById("contactPage")
      element.scrollIntoView({behavior: "smooth"})
    },
   render(){
-    if (height > 700 && width > 1200) {
+    if (height > 600 && width > 1020) {
       return (
         <nav className="nav_bar">
           <article className="nav_left">
